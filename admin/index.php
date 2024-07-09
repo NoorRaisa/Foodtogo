@@ -111,7 +111,7 @@ if(isset($_POST['submit']))
   
 <div class="container">
   <div class="info">
-    <h1>Administration </h1><span> login Account</span>
+    <h1>Administration </h1><span> Login Account</span>
   </div>
 </div>
 <div class="form">
@@ -130,9 +130,9 @@ if(isset($_POST['submit']))
   <span style="color:red;"><?php echo $message; ?></span>
    <span style="color:green;"><?php echo $success; ?></span>
   <form class="login-form" action="index.php" method="post">
-    <input type="text" placeholder="username" name="username"/>
-    <input type="password" placeholder="password" name="password"/>
-    <input type="submit"  name="submit" value="login" />
+    <input type="text" placeholder="Username" name="username"/>
+    <input type="password" placeholder="Password" name="password"/>
+    <input type="submit"  name="submit" value="Login" />
     <!--<p class="message">Not registered? <a href="#">Create an account</a></p>-->
   </form>
   
