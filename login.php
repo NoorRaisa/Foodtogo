@@ -57,7 +57,7 @@ if(isset($_POST['submit']))   // if button is submit
   
 <div class="container-fluid">
 <div class="pen-title">
-  <h1>Login Form</h1>
+  <h1 style="color:black; font-style:italic;">Login Form</h1>
 </div>
 <!-- Form Module-->
 <div class="module form-module">
@@ -65,9 +65,10 @@ if(isset($_POST['submit']))   // if button is submit
    
   </div>
   <div class="form">
-    <h2>Login to your account</h2>
-	  <span style="color:red;"><?php echo $message; ?></span> 
-   <span style="color:green;"><?php echo $success; ?></span>
+    <center><h2>Login to your account</h2></center>
+	<center><div class="thumbnail"><img src="./admin/images/admin.png"/></div></center>
+	  <center><span style="color:red;"><?php echo $message; ?></span></center> 
+   <center><span style="color:green;"><?php echo $success; ?></span></center>
     <form action="" method="post">
       <input type="text" placeholder="Username"  name="username"/>
       <input type="password" placeholder="Password" name="password"/>
