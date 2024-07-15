@@ -176,18 +176,25 @@ only screen and (max-width: 760px),
 																			if($status=="" or $status=="NULL")
 																			{
 																			?>
-																			<button type="button" class="btn btn-info" style="font-weight:bold;">Dispatch</button>
+																			<button type="button" class="btn btn-info" style="font-weight:bold;">Placed</button>
+																			<td data-column="Date"> <?php echo $row['date']; ?></td>
+																			<td data-column="Action"> <a href="delete_orders.php?order_del=<?php echo $row['o_id'];?>" onclick="return confirm('Are you sure you want to cancel your order?');" class="btn btn-danger btn-flat btn-addon btn-xs m-b-10"><i class="fa fa-trash-o" style="font-size:16px"></i></a> 
+																			</td>
 																		   <?php 
 																			  }
 																			   if($status=="in process")
 																			 { ?>
 																				<button type="button" class="btn btn-warning"><span class="fa fa-cog fa-spin"  aria-hidden="true" ></span>On the Way!</button>
+																				<td data-column="Date"> <?php echo $row['date']; ?></td>
+																				
 																			<?php
 																				}
 																			if($status=="closed")
 																				{
 																			?>
 																			 <button type="button" class="btn btn-success" ><span  class="fa fa-check-circle" aria-hidden="true">Delivered</button> 
+																			 <td data-column="Date"> <?php echo $row['date']; ?></td>
+																			
 																			<?php 
 																			} 
 																			?>
@@ -196,6 +203,8 @@ only screen and (max-width: 760px),
 																				{
 																			?>
 																			 <button type="button" class="btn btn-danger"> <i class="fa fa-close"></i>Cancelled</button>
+																			 <td data-column="Date"> <?php echo $row['date']; ?></td>
+																			
 																			<?php 
 																			} 
 																			?>
@@ -206,9 +215,7 @@ only screen and (max-width: 760px),
 														   
 														   
 														   </td>
-														  <td data-column="Date"> <?php echo $row['date']; ?></td>
-														   <td data-column="Action"> <a href="delete_orders.php?order_del=<?php echo $row['o_id'];?>" onclick="return confirm('Are you sure you want to cancel your order?');" class="btn btn-danger btn-flat btn-addon btn-xs m-b-10"><i class="fa fa-trash-o" style="font-size:16px"></i></a> 
-															</td>
+														  
 														 
 												</tr>
 												
