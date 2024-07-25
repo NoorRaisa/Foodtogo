@@ -164,7 +164,7 @@ if (isset($_POST['submit'])) //if submit btn is pressed
                               </div>
                               <div class="form-group col-sm-6">
                                  <label for="exampleInputEmail1">Phone number</label>
-                                 <input class="form-control" type="text" name="phone" id="example-tel-input-3" placeholder="Phone"> <small class="form-text text-muted">We"ll never share your phone with anyone else.</small>
+                                 <input class="form-control" type="number" name="phone" id="example-tel-input-3" placeholder="Phone"> <small class="form-text text-muted">We"ll never share your number with anyone else.</small>
                               </div>
                               <div class="form-group col-sm-6">
                                  <label for="exampleInputEmail1">Location</label>
