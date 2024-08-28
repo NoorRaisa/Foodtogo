@@ -39,7 +39,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
    
 								$store = "Res_img/".basename($fnew);                      // the path to store the upload image
 	
-					if($extension == 'jpg'||$extension == 'png'||$extension == 'gif' )
+					if($extension == 'jpg'||$extension == 'png'||$extension == 'jpeg' || $extension == 'gif')
 					{        
 									if($fsize>=1000000)
 										{
