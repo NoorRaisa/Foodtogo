@@ -91,7 +91,7 @@ $loc=$_SESSION["location"]
 
                     echo '  <div class="col-xs-12 col-sm-6 col-md-4 food-item">
 														<div class="food-item-wrap">
-															<div class="figure-wrap bg-image" data-image-src="admin/Res_img/dishes/' . $r['img'] . '">
+															   <div class="figure-wrap bg-image" data-image-src="admin/Res_img/dishes/' . $r['img'] . '">
 																<div class="distance"><i class="fa fa-pin"></i>1240m</div>
 																<div class="rating pull-left"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
 																<div class="review pull-right"><a href="#">198 reviews</a> </div>

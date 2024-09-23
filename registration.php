@@ -172,7 +172,7 @@ if (isset($_POST['submit'])) //if submit btn is pressed
                               </div>
                               <div class="form-group col-sm-6">
                                  <label for="exampleInputPassword1">Password</label>
-                                 <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+                                 <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password (Atleast 6 Characters)">
                               </div>
                               <div class="form-group col-sm-12">
                                  <label for="exampleInputPassword1">Repeat password</label>
