@@ -39,7 +39,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
    
 								$store = "Res_img/dishes/".basename($fnew);                      // the path to store the upload image
 	
-					if($extension == 'jpg'||$extension == 'png'||$extension == 'gif' )
+					if($extension == 'jpg'||$extension == 'png'||$extension == 'jpeg' )
 					{        
 									if($fsize>=1000000)
 										{
@@ -81,7 +81,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
 					
 											$error = 	'<div class="alert alert-danger alert-dismissible fade show">
 																<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-																<strong>invalid extension!</strong>png, jpg, Gif are accepted.
+																<strong>invalid extension!</strong>png, jpg, jpeg are accepted.
 															</div>';
 						
 	   
