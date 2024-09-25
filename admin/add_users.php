@@ -198,8 +198,8 @@ if (isset($_POST['submit'])) {
 
 
                         <?php  ///echo var_dump($_POST);
-                        ///echo $error;
-                        ///echo $success; 
+                        echo $error;
+                        echo $success; 
                         ?>
 
 

@@ -86,7 +86,7 @@ $loc=$_SESSION["location"]
 
                 <?php
                 // fetch records from database to display popular first 3 dishes from table
-                $query_res = mysqli_query($db, "select * from dishes INNER JOIN restaurant on dishes.rs_id=restaurant.rs_id where restaurant.location='$loc' LIMIT 3");
+                $query_res = mysqli_query($db, "select restaurant.rs_id,restaurant.title as t1,dishes.title as t2,slogan,price,img from dishes INNER JOIN restaurant on dishes.rs_id=restaurant.rs_id where restaurant.location='$loc' LIMIT 3");
                 while ($r = mysqli_fetch_array($query_res)) {
 
                     echo '  <div class="col-xs-12 col-sm-6 col-md-4 food-item">
@@ -97,7 +97,8 @@ $loc=$_SESSION["location"]
 																<div class="review pull-right"><a href="#">198 reviews</a> </div>
 															</div>
 															<div class="content">
-																<h5><a href="dishes.php?res_id=' . $r['rs_id'] . '">' . $r['title'] . '</a></h5>
+																<h5><a href="dishes.php?res_id=' . $r['rs_id'] . '">' . $r['t1'] . '</a></h5>
+                                                                <div class="product-name">' . $r['t2'] . '</div>
 																<div class="product-name">' . $r['slogan'] . '</div>
 																<div class="price-btn-block"> <span class="price">BDT' . $r['price'] . '</span> <a href="dishes.php?res_id=' . $r['rs_id'] . '" class="btn theme-btn-dash pull-right">Order Now</a> </div>
 															</div>
